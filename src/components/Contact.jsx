@@ -25,11 +25,11 @@ export default function Contact() {
             ))}
           </div>
           <div className="social-row" style={{ marginTop: 30 }}>
-            <a href="mailto:venkateshsrigiri13@gmail.com" className="social-link"><i className="fa-solid fa-envelope" /></a>
-            <a href="tel:+917569752014" className="social-link"><i className="fa-solid fa-phone" /></a>
-            <a href="#" className="social-link"><i className="fa-brands fa-linkedin-in" /></a>
-            <a href="#" className="social-link"><i className="fa-brands fa-github" /></a>
-            <a href="#" className="social-link"><i className="fa-brands fa-twitter" /></a>
+            <a href="mailto:venkateshsrigiri13@gmail.com" className="social-link" aria-label="Email"><i className="fa-solid fa-envelope" /></a>
+            <a href="tel:+917569752014" className="social-link" aria-label="Phone"><i className="fa-solid fa-phone" /></a>
+            <button className="social-link" aria-label="LinkedIn" onClick={() => window.open('https://linkedin.com', '_blank')}><i className="fa-brands fa-linkedin-in" /></button>
+            <button className="social-link" aria-label="GitHub" onClick={() => window.open('https://github.com', '_blank')}><i className="fa-brands fa-github" /></button>
+            <button className="social-link" aria-label="Twitter" onClick={() => window.open('https://twitter.com', '_blank')}><i className="fa-brands fa-twitter" /></button>
           </div>
         </div>
 

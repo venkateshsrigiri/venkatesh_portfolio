@@ -1,64 +1,44 @@
-export default function Contact() {
+export default function About() {
   return (
-    <section className="contact-section" id="contact">
-      <div className="section-label reveal"><div className="line" /><span>Get In Touch</span></div>
-      <h2 className="section-title-main reveal reveal-delay-1">Let's Build<br />Something Together</h2>
-
-      <div className="contact-grid">
-        <div className="reveal reveal-delay-1">
-          <p className="section-sub">
-            I'm open to full-time roles, freelance projects, and collaborations. Whether you have a project idea or just want to connect — feel free to reach out!
+    <section className="about-section" id="about">
+      <div className="section-label reveal">
+        <div className="line" /><span>About Me</span>
+      </div>
+      <div className="about-grid">
+        <div className="about-img-wrap reveal">
+          <img src="/VENKATESH_PHOTO.png" alt="Venkatesh Srigiri" />
+          <div className="about-img-badge">
+            <div className="badge-num">2024</div>
+            <div className="badge-txt">Graduate</div>
+          </div>
+        </div>
+        <div className="reveal reveal-delay-2">
+          <h2 className="section-title-main">Driven by code,<br />shaped by curiosity.</h2>
+          <p className="section-sub" style={{ maxWidth: '100%', marginTop: 16 }}>
+            I graduated from <strong style={{ color: 'var(--white)' }}>GITAM University, Hyderabad</strong> and am currently deepening my expertise in Java FullStack development at Codegnan — building scalable enterprise applications with modern frameworks and clean architecture principles.
           </p>
-          <div className="contact-info-list">
+          <ul className="about-info-list">
             {[
-              { icon: 'fa-solid fa-envelope', label: 'Email', val: 'venkateshsrigiri13@gmail.com' },
-              { icon: 'fa-solid fa-phone', label: 'Phone', val: '+91-7569752014' },
-              { icon: 'fa-solid fa-location-dot', label: 'Location', val: 'Chandanagar, Hyderabad, Telangana 500050' },
-            ].map(item => (
-              <div className="ci-item" key={item.label}>
-                <div className="ci-icon"><i className={item.icon} /></div>
-                <div>
-                  <div className="ci-label">{item.label}</div>
-                  <div className="ci-val">{item.val}</div>
-                </div>
-              </div>
+              ['Name', 'Venkatesh Srigiri'],
+              ['Date of Birth', 'December 13, 2003'],
+              ['Email', 'venkateshsrigiri13@gmail.com'],
+              ['Phone', '+91-7569752014'],
+              ['Location', 'Hyderabad, Telangana'],
+              ['ZIP Code', '503185'],
+            ].map(([k, v]) => (
+              <li key={k}><span className="info-key">{k}</span><span className="info-val">{v}</span></li>
             ))}
+          </ul>
+          <div className="edu-box">
+            <div className="edu-title">B.Tech — GITAM University, Hyderabad</div>
+            <div className="edu-sub">Training: Java FullStack Development · Codegnan</div>
           </div>
           <div className="social-row" style={{ marginTop: 30 }}>
             <a href="mailto:venkateshsrigiri13@gmail.com" className="social-link" aria-label="Email"><i className="fa-solid fa-envelope" /></a>
             <a href="tel:+917569752014" className="social-link" aria-label="Phone"><i className="fa-solid fa-phone" /></a>
             <button className="social-link" aria-label="LinkedIn" onClick={() => window.open('https://linkedin.com', '_blank')}><i className="fa-brands fa-linkedin-in" /></button>
             <button className="social-link" aria-label="GitHub" onClick={() => window.open('https://github.com', '_blank')}><i className="fa-brands fa-github" /></button>
-            <button className="social-link" aria-label="Twitter" onClick={() => window.open('https://twitter.com', '_blank')}><i className="fa-brands fa-twitter" /></button>
           </div>
-        </div>
-
-        <div className="contact-form-wrap reveal reveal-delay-2">
-          <div className="form-title">Send a Message</div>
-          <p className="form-sub">I'll get back to you within 24 hours.</p>
-          <form action="https://formspree.io/f/xaqobywn" method="POST">
-            <div className="form-row">
-              <div className="form-field">
-                <label>Your Name</label>
-                <input type="text" name="name" placeholder="John Doe" required />
-              </div>
-              <div className="form-field">
-                <label>Your Email</label>
-                <input type="email" name="email" placeholder="john@email.com" required />
-              </div>
-            </div>
-            <div className="form-field">
-              <label>Subject</label>
-              <input type="text" name="subject" placeholder="Project collaboration..." />
-            </div>
-            <div className="form-field">
-              <label>Message</label>
-              <textarea name="message" rows="5" placeholder="Tell me about your project or opportunity..." required />
-            </div>
-            <button type="submit" className="btn-submit">
-              <i className="fa-solid fa-paper-plane" style={{ marginRight: 8 }} />Send Message
-            </button>
-          </form>
         </div>
       </div>
     </section>
