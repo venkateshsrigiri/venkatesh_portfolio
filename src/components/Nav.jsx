@@ -32,14 +32,21 @@ export default function Nav() {
 
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
-      <span className="nav-logo" onClick={() => scrollTo('hero')}>VS<span>.</span></span>
+      <button className="nav-logo" onClick={() => scrollTo('hero')}>VS<span>.</span></button>
       <ul>
         {links.map(l => (
           <li key={l.href}>
-            <a className={active === l.href ? 'active' : ''} onClick={() => scrollTo(l.href)}>{l.label}</a>
+            <button
+              className={active === l.href ? 'active' : ''}
+              onClick={() => scrollTo(l.href)}
+            >
+              {l.label}
+            </button>
           </li>
         ))}
-        <li><a className="nav-cta" onClick={() => scrollTo('contact')}>Hire Me</a></li>
+        <li>
+          <button className="nav-cta" onClick={() => scrollTo('contact')}>Hire Me</button>
+        </li>
       </ul>
     </nav>
   );
