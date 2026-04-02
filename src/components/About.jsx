@@ -8,7 +8,7 @@ export default function About() {
         <div className="about-img-wrap reveal">
           <img src="/VENKATESH_PHOTO.png" alt="Venkatesh Srigiri" />
           <div className="about-img-badge">
-            <div className="badge-num">2024</div>
+            <div className="badge-num">2025</div>
             <div className="badge-txt">Graduate</div>
           </div>
         </div>
