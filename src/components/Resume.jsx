@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const tabs = [
   { label: 'Java FullStack', file: '/Venkatesh Srigiri_Java_Resume.pdf', fullLabel: 'Java FullStack Resume' },
-  { label: 'Data Analytics', file: '/Venkatesh Srigiri_DataAnalytics_Resume.pdf', fullLabel: 'Data Analytics Resume' },
   { label: 'Machine Learning', file: '/Venkatesh_Srigiri_ML_Resume.pdf', fullLabel: 'Machine Learning Resume' },
 ];
 

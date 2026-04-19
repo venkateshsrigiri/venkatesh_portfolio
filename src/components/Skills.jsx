@@ -5,8 +5,8 @@ const skills = [
   { img: '/python logo.jpg', name: 'Python', pct: '80%' },
   { img: '/react logo.jpg', name: 'React', pct: '75%' },
   { img: '/mysql logo.png', name: 'MySQL', pct: '80%' },
-  { img: '/html logo.png', name: 'HTML5', pct: '85%' },
-  { img: '/css.png', name: 'CSS3', pct: '80%' },
+  { img: '/tensorflow.png', name: 'Tensorflow', pct: '95%' },
+  { img: '/pandas.png', name: 'Pandas', pct: '90%' },
 ];
 
 const tags = [

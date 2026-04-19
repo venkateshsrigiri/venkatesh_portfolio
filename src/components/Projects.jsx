@@ -1,21 +1,12 @@
 const projects = [
   {
-    img: '/hospital management logo.png',
-    alt: 'Hospital Management System',
-    link: '#',
+    img: '/url_shortner.png',
+    alt: 'Url Shortner',
+    link: 'https://url-shortner-1-obft.onrender.com',
     linkLabel: 'View Project →',
     tags: ['Java', 'Spring Boot', 'MySQL'],
-    title: 'Hospital Management System',
-    desc: 'A full-stack enterprise app to manage hospital operations — patients, appointments, doctors, and billing — built with Spring Boot and MySQL.',
-  },
-  {
-    img: '/stock market analysis logo.png',
-    alt: 'Stock Market Analysis',
-    link: 'https://stock-market-analysis-dstkwvcjj2e2kjwijkj5cu.streamlit.app/',
-    linkLabel: 'Live Demo →',
-    tags: ['Python', 'Streamlit', 'Pandas'],
-    title: 'Stock Market Analysis',
-    desc: 'Interactive data analytics dashboard for visualizing and analyzing stock market trends with real-time data, charts, and financial indicators.',
+    title: 'Url Shortner',
+    desc: 'Built a URL shortener service using PostgreSQL that converts long URLs into compact, unique links and efficiently redirects users to the original destination.',
   },
   {
     img: '/movie recommender logo.png',
@@ -37,10 +28,10 @@ export default function Projects() {
           <h2 className="section-title-main reveal reveal-delay-1">Work I'm<br />Proud Of</h2>
         </div>
         <p className="section-sub reveal reveal-delay-2">
-          A showcase spanning enterprise development, data analytics, and machine learning.
+          A showcase spanning enterprise Java development and machine learning.
         </p>
       </div>
-      <div className="projects-grid">
+      <div className="projects-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
         {projects.map((p, i) => (
           <div className={`project-card reveal reveal-delay-${i + 1}`} key={p.title}>
             <div className="project-img">
